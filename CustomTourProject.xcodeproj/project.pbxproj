@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		616477F1228053EC008D9C69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616477F0228053EC008D9C69 /* AppDelegate.swift */; };
+		616477F3228053EC008D9C69 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616477F2228053EC008D9C69 /* ParentViewController.swift */; };
+		616477F6228053EC008D9C69 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616477F4228053EC008D9C69 /* Main.storyboard */; };
+		616477F8228053ED008D9C69 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616477F7228053ED008D9C69 /* Assets.xcassets */; };
+		616477FB228053ED008D9C69 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616477F9228053ED008D9C69 /* LaunchScreen.storyboard */; };
+		61B2D434228063B4006E6679 /* JJFloatingActionButton+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D425228063B4006E6679 /* JJFloatingActionButton+Animation.swift */; };
+		61B2D435228063B4006E6679 /* UIView+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D426228063B4006E6679 /* UIView+JJFloatingActionButton.swift */; };
+		61B2D436228063B4006E6679 /* JJFloatingActionButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D427228063B4006E6679 /* JJFloatingActionButtonDelegate.swift */; };
+		61B2D437228063B4006E6679 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D428228063B4006E6679 /* Styles.swift */; };
+		61B2D438228063B4006E6679 /* AnimationConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D429228063B4006E6679 /* AnimationConfiguration.swift */; };
+		61B2D439228063B4006E6679 /* JJActionItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D42A228063B4006E6679 /* JJActionItem.swift */; };
+		61B2D43A228063B4006E6679 /* JJFloatingActionButtonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D42B228063B4006E6679 /* JJFloatingActionButtonState.swift */; };
+		61B2D43B228063B4006E6679 /* JJActionItemTitlePosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D42C228063B4006E6679 /* JJActionItemTitlePosition.swift */; };
+		61B2D43C228063B4006E6679 /* UIColor+JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D42D228063B4006E6679 /* UIColor+JJFloatingActionButton.swift */; };
+		61B2D43D228063B4006E6679 /* JJFloatingActionButton+Placement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D42E228063B4006E6679 /* JJFloatingActionButton+Placement.swift */; };
+		61B2D43E228063B4006E6679 /* LayerProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D42F228063B4006E6679 /* LayerProperties.swift */; };
+		61B2D43F228063B4006E6679 /* JJFloatingActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D430228063B4006E6679 /* JJFloatingActionButton.swift */; };
+		61B2D440228063B4006E6679 /* JJCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D431228063B4006E6679 /* JJCircleView.swift */; };
+		61B2D44222806BAC006E6679 /* TourManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D44122806BAC006E6679 /* TourManager.swift */; };
+		61B2D44422806C3E006E6679 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D44322806C3E006E6679 /* ChildViewController.swift */; };
+		61B2D4462280727E006E6679 /* UIView+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D4452280727E006E6679 /* UIView+Mask.swift */; };
+		61B2D44A22809890006E6679 /* HintModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D44922809890006E6679 /* HintModalView.swift */; };
+		61B2D44C2280A13E006E6679 /* HintModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B2D44B2280A13E006E6679 /* HintModalView.xib */; };
+		61B2D44F2281A359006E6679 /* TourManagerHintModalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D44E2281A359006E6679 /* TourManagerHintModalConfiguration.swift */; };
+		61B2D4512281D445006E6679 /* TourManagerFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D4502281D445006E6679 /* TourManagerFlow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		616477ED228053EC008D9C69 /* CustomTourProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTourProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		616477F0228053EC008D9C69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		616477F2228053EC008D9C69 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		616477F5228053EC008D9C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		616477F7228053ED008D9C69 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		616477FA228053ED008D9C69 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		616477FC228053ED008D9C69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61B2D425228063B4006E6679 /* JJFloatingActionButton+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JJFloatingActionButton+Animation.swift"; sourceTree = "<group>"; };
+		61B2D426228063B4006E6679 /* UIView+JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		61B2D427228063B4006E6679 /* JJFloatingActionButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButtonDelegate.swift; sourceTree = "<group>"; };
+		61B2D428228063B4006E6679 /* Styles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		61B2D429228063B4006E6679 /* AnimationConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationConfiguration.swift; sourceTree = "<group>"; };
+		61B2D42A228063B4006E6679 /* JJActionItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJActionItem.swift; sourceTree = "<group>"; };
+		61B2D42B228063B4006E6679 /* JJFloatingActionButtonState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButtonState.swift; sourceTree = "<group>"; };
+		61B2D42C228063B4006E6679 /* JJActionItemTitlePosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJActionItemTitlePosition.swift; sourceTree = "<group>"; };
+		61B2D42D228063B4006E6679 /* UIColor+JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+JJFloatingActionButton.swift"; sourceTree = "<group>"; };
+		61B2D42E228063B4006E6679 /* JJFloatingActionButton+Placement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JJFloatingActionButton+Placement.swift"; sourceTree = "<group>"; };
+		61B2D42F228063B4006E6679 /* LayerProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayerProperties.swift; sourceTree = "<group>"; };
+		61B2D430228063B4006E6679 /* JJFloatingActionButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJFloatingActionButton.swift; sourceTree = "<group>"; };
+		61B2D431228063B4006E6679 /* JJCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JJCircleView.swift; sourceTree = "<group>"; };
+		61B2D44122806BAC006E6679 /* TourManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourManager.swift; sourceTree = "<group>"; };
+		61B2D44322806C3E006E6679 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		61B2D4452280727E006E6679 /* UIView+Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Mask.swift"; sourceTree = "<group>"; };
+		61B2D44922809890006E6679 /* HintModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintModalView.swift; sourceTree = "<group>"; };
+		61B2D44B2280A13E006E6679 /* HintModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HintModalView.xib; sourceTree = "<group>"; };
+		61B2D44E2281A359006E6679 /* TourManagerHintModalConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourManagerHintModalConfiguration.swift; sourceTree = "<group>"; };
+		61B2D4502281D445006E6679 /* TourManagerFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourManagerFlow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		616477EA228053EC008D9C69 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		616477E4228053EC008D9C69 = {
+			isa = PBXGroup;
+			children = (
+				616477EF228053EC008D9C69 /* CustomTourProject */,
+				616477EE228053EC008D9C69 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		616477EE228053EC008D9C69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				616477ED228053EC008D9C69 /* CustomTourProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		616477EF228053EC008D9C69 /* CustomTourProject */ = {
+			isa = PBXGroup;
+			children = (
+				61B2D44D2281A346006E6679 /* TourManager */,
+				61B2D4482280987A006E6679 /* Extensions */,
+				61B2D44722809878006E6679 /* Views */,
+				616477F0228053EC008D9C69 /* AppDelegate.swift */,
+				616477F2228053EC008D9C69 /* ParentViewController.swift */,
+				61B2D44322806C3E006E6679 /* ChildViewController.swift */,
+				616477F4228053EC008D9C69 /* Main.storyboard */,
+				616477F7228053ED008D9C69 /* Assets.xcassets */,
+				616477F9228053ED008D9C69 /* LaunchScreen.storyboard */,
+				616477FC228053ED008D9C69 /* Info.plist */,
+				61B2D421228063B4006E6679 /* JJFloatingActionButton */,
+			);
+			path = CustomTourProject;
+			sourceTree = "<group>";
+		};
+		61B2D421228063B4006E6679 /* JJFloatingActionButton */ = {
+			isa = PBXGroup;
+			children = (
+				61B2D425228063B4006E6679 /* JJFloatingActionButton+Animation.swift */,
+				61B2D426228063B4006E6679 /* UIView+JJFloatingActionButton.swift */,
+				61B2D427228063B4006E6679 /* JJFloatingActionButtonDelegate.swift */,
+				61B2D428228063B4006E6679 /* Styles.swift */,
+				61B2D429228063B4006E6679 /* AnimationConfiguration.swift */,
+				61B2D42A228063B4006E6679 /* JJActionItem.swift */,
+				61B2D42B228063B4006E6679 /* JJFloatingActionButtonState.swift */,
+				61B2D42C228063B4006E6679 /* JJActionItemTitlePosition.swift */,
+				61B2D42D228063B4006E6679 /* UIColor+JJFloatingActionButton.swift */,
+				61B2D42E228063B4006E6679 /* JJFloatingActionButton+Placement.swift */,
+				61B2D42F228063B4006E6679 /* LayerProperties.swift */,
+				61B2D430228063B4006E6679 /* JJFloatingActionButton.swift */,
+				61B2D431228063B4006E6679 /* JJCircleView.swift */,
+			);
+			path = JJFloatingActionButton;
+			sourceTree = "<group>";
+		};
+		61B2D44722809878006E6679 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61B2D44922809890006E6679 /* HintModalView.swift */,
+				61B2D44B2280A13E006E6679 /* HintModalView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		61B2D4482280987A006E6679 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				61B2D4452280727E006E6679 /* UIView+Mask.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		61B2D44D2281A346006E6679 /* TourManager */ = {
+			isa = PBXGroup;
+			children = (
+				61B2D44122806BAC006E6679 /* TourManager.swift */,
+				61B2D4502281D445006E6679 /* TourManagerFlow.swift */,
+				61B2D44E2281A359006E6679 /* TourManagerHintModalConfiguration.swift */,
+			);
+			path = TourManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		616477EC228053EC008D9C69 /* CustomTourProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 616477FF228053ED008D9C69 /* Build configuration list for PBXNativeTarget "CustomTourProject" */;
+			buildPhases = (
+				616477E9228053EC008D9C69 /* Sources */,
+				616477EA228053EC008D9C69 /* Frameworks */,
+				616477EB228053EC008D9C69 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomTourProject;
+			productName = CustomTourProject;
+			productReference = 616477ED228053EC008D9C69 /* CustomTourProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		616477E5228053EC008D9C69 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = NerdzLab;
+				TargetAttributes = {
+					616477EC228053EC008D9C69 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 616477E8228053EC008D9C69 /* Build configuration list for PBXProject "CustomTourProject" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 616477E4228053EC008D9C69;
+			productRefGroup = 616477EE228053EC008D9C69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				616477EC228053EC008D9C69 /* CustomTourProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		616477EB228053EC008D9C69 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B2D44C2280A13E006E6679 /* HintModalView.xib in Resources */,
+				616477FB228053ED008D9C69 /* LaunchScreen.storyboard in Resources */,
+				616477F8228053ED008D9C69 /* Assets.xcassets in Resources */,
+				616477F6228053EC008D9C69 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		616477E9228053EC008D9C69 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61B2D435228063B4006E6679 /* UIView+JJFloatingActionButton.swift in Sources */,
+				61B2D44222806BAC006E6679 /* TourManager.swift in Sources */,
+				61B2D43C228063B4006E6679 /* UIColor+JJFloatingActionButton.swift in Sources */,
+				616477F3228053EC008D9C69 /* ParentViewController.swift in Sources */,
+				61B2D4462280727E006E6679 /* UIView+Mask.swift in Sources */,
+				616477F1228053EC008D9C69 /* AppDelegate.swift in Sources */,
+				61B2D437228063B4006E6679 /* Styles.swift in Sources */,
+				61B2D4512281D445006E6679 /* TourManagerFlow.swift in Sources */,
+				61B2D43E228063B4006E6679 /* LayerProperties.swift in Sources */,
+				61B2D43B228063B4006E6679 /* JJActionItemTitlePosition.swift in Sources */,
+				61B2D436228063B4006E6679 /* JJFloatingActionButtonDelegate.swift in Sources */,
+				61B2D44422806C3E006E6679 /* ChildViewController.swift in Sources */,
+				61B2D438228063B4006E6679 /* AnimationConfiguration.swift in Sources */,
+				61B2D43A228063B4006E6679 /* JJFloatingActionButtonState.swift in Sources */,
+				61B2D44F2281A359006E6679 /* TourManagerHintModalConfiguration.swift in Sources */,
+				61B2D44A22809890006E6679 /* HintModalView.swift in Sources */,
+				61B2D439228063B4006E6679 /* JJActionItem.swift in Sources */,
+				61B2D440228063B4006E6679 /* JJCircleView.swift in Sources */,
+				61B2D434228063B4006E6679 /* JJFloatingActionButton+Animation.swift in Sources */,
+				61B2D43D228063B4006E6679 /* JJFloatingActionButton+Placement.swift in Sources */,
+				61B2D43F228063B4006E6679 /* JJFloatingActionButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		616477F4228053EC008D9C69 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616477F5228053EC008D9C69 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		616477F9228053ED008D9C69 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616477FA228053ED008D9C69 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		616477FD228053ED008D9C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		616477FE228053ED008D9C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		61647800228053ED008D9C69 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomTourProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.CustomTourProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		61647801228053ED008D9C69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CustomTourProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.CustomTourProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		616477E8228053EC008D9C69 /* Build configuration list for PBXProject "CustomTourProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616477FD228053ED008D9C69 /* Debug */,
+				616477FE228053ED008D9C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		616477FF228053ED008D9C69 /* Build configuration list for PBXNativeTarget "CustomTourProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				61647800228053ED008D9C69 /* Debug */,
+				61647801228053ED008D9C69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 616477E5228053EC008D9C69 /* Project object */;
+}
