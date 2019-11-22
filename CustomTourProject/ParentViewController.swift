@@ -33,10 +33,9 @@ class ParentViewController: UIViewController {
 
 private extension ParentViewController {
     func setupTourManager() {
-        if let partyMenuTourFlow = preparePartyMenuTourFlow(),
-            let helpButtonTourFlow = prepareHelpButtonTourFlow() {
+        if let partyMenuTourFlow = preparePartyMenuTourFlow(), let helpButtonTourFlow = prepareHelpButtonTourFlow() {
             
-            let flows: [TourManagerFlow] = [partyMenuTourFlow, helpButtonTourFlow]
+            let flows: [TourFlow] = [partyMenuTourFlow, helpButtonTourFlow]
             
             tourManager = TourManager(sceneController: self, flows: flows)
             
@@ -44,11 +43,12 @@ private extension ParentViewController {
         }
     }
 
-    private func preparePartyMenuTourFlow() -> TourManagerFlow? {
+    private func preparePartyMenuTourFlow() -> TourFlow? {
+        /*
         guard let childController = childMapViewController else { return nil }
         
         //
-        let hintModalConfiguration = TourManagerHintModalConfiguration(title: "Party Menu", description: "The Party menu is where you access cool features such as Party chat, Party setting and more. ", image: UIImage(named: "tip_modal"))
+        let hintModalConfiguration = TourManagerHintItemModalConfiguration(title: "Party Menu", description: "The Party menu is where you access cool features such as Party chat, Party setting and more. ", image: UIImage(named: "tip_modal"))
         
         //
         var hintItems: [UIView] = []
@@ -60,7 +60,7 @@ private extension ParentViewController {
         }
     
         //
-        let flow = TourManagerFlow(hintModalConfiguration: hintModalConfiguration, hintItems: hintItems)
+        let flow = TourFlow(hintModalConfiguration: hintModalConfiguration, hintItems: hintItems)
         
         flow.onStartFlowCompletion = { [weak self] in
             self?.childMapViewController?.menuButton.open()
@@ -71,24 +71,29 @@ private extension ParentViewController {
         }
         
         return flow
+    */
+        return nil
     }
     
-    private func prepareHelpButtonTourFlow() -> TourManagerFlow? {
+    private func prepareHelpButtonTourFlow() -> TourFlow? {
+        /*
         guard let childController = childMapViewController else { return nil }
         //
-        let hintModalConfiguration = TourManagerHintModalConfiguration(title: "Help Button", description: "For when you ever need to alert your entire Party that you need urgent assistance.", image: UIImage(named: "tip_modal"))
+        let hintModalConfiguration = TourManagerHintItemModalConfiguration(title: "Help Button", description: "For when you ever need to alert your entire Party that you need urgent assistance.", image: UIImage(named: "tip_modal"))
         hintModalConfiguration.topConstraintMultiplier = 0.58
         
         //
         let hintItems: [UIView] = [childController.helpButton]
         
         //
-        let flow = TourManagerFlow(hintModalConfiguration: hintModalConfiguration, hintItems: hintItems)
+        let flow = TourFlow(hintModalConfiguration: hintModalConfiguration, hintItems: hintItems)
         
         flow.onStartFlowCompletion = { }
         
         flow.onEndFlowCompletion = { }
         
         return flow
+ */
+        return nil
     }
 }

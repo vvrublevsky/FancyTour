@@ -30,8 +30,11 @@
 		61B2D4462280727E006E6679 /* UIView+Mask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D4452280727E006E6679 /* UIView+Mask.swift */; };
 		61B2D44A22809890006E6679 /* HintModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D44922809890006E6679 /* HintModalView.swift */; };
 		61B2D44C2280A13E006E6679 /* HintModalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61B2D44B2280A13E006E6679 /* HintModalView.xib */; };
-		61B2D44F2281A359006E6679 /* TourManagerHintModalConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D44E2281A359006E6679 /* TourManagerHintModalConfiguration.swift */; };
-		61B2D4512281D445006E6679 /* TourManagerFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D4502281D445006E6679 /* TourManagerFlow.swift */; };
+		61B2D4512281D445006E6679 /* TourFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B2D4502281D445006E6679 /* TourFlow.swift */; };
+		61B4D7082388436200293178 /* ModalTourFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B4D7072388436200293178 /* ModalTourFlowHandler.swift */; };
+		61C4676A238821CC0064E780 /* TourHintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C46769238821CC0064E780 /* TourHintItem.swift */; };
+		61C4676C2388257C0064E780 /* TourFlowConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4676B2388257C0064E780 /* TourFlowConfiguration.swift */; };
+		61C4676F2388384B0064E780 /* TourFlowHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C4676E2388384B0064E780 /* TourFlowHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,8 +63,11 @@
 		61B2D4452280727E006E6679 /* UIView+Mask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Mask.swift"; sourceTree = "<group>"; };
 		61B2D44922809890006E6679 /* HintModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HintModalView.swift; sourceTree = "<group>"; };
 		61B2D44B2280A13E006E6679 /* HintModalView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HintModalView.xib; sourceTree = "<group>"; };
-		61B2D44E2281A359006E6679 /* TourManagerHintModalConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourManagerHintModalConfiguration.swift; sourceTree = "<group>"; };
-		61B2D4502281D445006E6679 /* TourManagerFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourManagerFlow.swift; sourceTree = "<group>"; };
+		61B2D4502281D445006E6679 /* TourFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourFlow.swift; sourceTree = "<group>"; };
+		61B4D7072388436200293178 /* ModalTourFlowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTourFlowHandler.swift; sourceTree = "<group>"; };
+		61C46769238821CC0064E780 /* TourHintItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourHintItem.swift; sourceTree = "<group>"; };
+		61C4676B2388257C0064E780 /* TourFlowConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourFlowConfiguration.swift; sourceTree = "<group>"; };
+		61C4676E2388384B0064E780 /* TourFlowHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourFlowHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,10 +156,45 @@
 			isa = PBXGroup;
 			children = (
 				61B2D44122806BAC006E6679 /* TourManager.swift */,
-				61B2D4502281D445006E6679 /* TourManagerFlow.swift */,
-				61B2D44E2281A359006E6679 /* TourManagerHintModalConfiguration.swift */,
+				61C4676D238833700064E780 /* Flow */,
+				61C46768238821850064E780 /* HintItem */,
 			);
 			path = TourManager;
+			sourceTree = "<group>";
+		};
+		61B4D7052388433400293178 /* FlowHandler */ = {
+			isa = PBXGroup;
+			children = (
+				61C4676E2388384B0064E780 /* TourFlowHandler.swift */,
+				61B4D7072388436200293178 /* ModalTourFlowHandler.swift */,
+			);
+			path = FlowHandler;
+			sourceTree = "<group>";
+		};
+		61B4D7062388434100293178 /* FlowConfiguration */ = {
+			isa = PBXGroup;
+			children = (
+				61C4676B2388257C0064E780 /* TourFlowConfiguration.swift */,
+			);
+			path = FlowConfiguration;
+			sourceTree = "<group>";
+		};
+		61C46768238821850064E780 /* HintItem */ = {
+			isa = PBXGroup;
+			children = (
+				61C46769238821CC0064E780 /* TourHintItem.swift */,
+			);
+			path = HintItem;
+			sourceTree = "<group>";
+		};
+		61C4676D238833700064E780 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				61B2D4502281D445006E6679 /* TourFlow.swift */,
+				61B4D7052388433400293178 /* FlowHandler */,
+				61B4D7062388434100293178 /* FlowConfiguration */,
+			);
+			path = Flow;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,17 +276,20 @@
 				61B2D4462280727E006E6679 /* UIView+Mask.swift in Sources */,
 				616477F1228053EC008D9C69 /* AppDelegate.swift in Sources */,
 				61B2D437228063B4006E6679 /* Styles.swift in Sources */,
-				61B2D4512281D445006E6679 /* TourManagerFlow.swift in Sources */,
+				61B2D4512281D445006E6679 /* TourFlow.swift in Sources */,
 				61B2D43E228063B4006E6679 /* LayerProperties.swift in Sources */,
+				61C4676A238821CC0064E780 /* TourHintItem.swift in Sources */,
+				61C4676F2388384B0064E780 /* TourFlowHandler.swift in Sources */,
 				61B2D43B228063B4006E6679 /* JJActionItemTitlePosition.swift in Sources */,
 				61B2D436228063B4006E6679 /* JJFloatingActionButtonDelegate.swift in Sources */,
 				61B2D44422806C3E006E6679 /* ChildViewController.swift in Sources */,
 				61B2D438228063B4006E6679 /* AnimationConfiguration.swift in Sources */,
 				61B2D43A228063B4006E6679 /* JJFloatingActionButtonState.swift in Sources */,
-				61B2D44F2281A359006E6679 /* TourManagerHintModalConfiguration.swift in Sources */,
 				61B2D44A22809890006E6679 /* HintModalView.swift in Sources */,
 				61B2D439228063B4006E6679 /* JJActionItem.swift in Sources */,
+				61B4D7082388436200293178 /* ModalTourFlowHandler.swift in Sources */,
 				61B2D440228063B4006E6679 /* JJCircleView.swift in Sources */,
+				61C4676C2388257C0064E780 /* TourFlowConfiguration.swift in Sources */,
 				61B2D434228063B4006E6679 /* JJFloatingActionButton+Animation.swift in Sources */,
 				61B2D43D228063B4006E6679 /* JJFloatingActionButton+Placement.swift in Sources */,
 				61B2D43F228063B4006E6679 /* JJFloatingActionButton.swift in Sources */,
@@ -394,7 +438,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomTourProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -402,6 +447,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.CustomTourProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -411,7 +457,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = CustomTourProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,6 +466,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.CustomTourProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
